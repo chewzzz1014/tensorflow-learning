@@ -1,7 +1,7 @@
 <annotation>
 	<folder>train</folder>
-	<filename>3chaxo.com.jpg</filename>
-	<path>C:\Users\USER\tensorflow-learning\Tensorflow\workspace\training_demo\images\train\3chaxo.com.jpg</path>
+	<filename>15yearssg.wellnesspetfood.com.sg.jpg</filename>
+	<path>C:\Users\USER\tensorflow-learning\Tensorflow\workspace\training_demo\images\train\15yearssg.wellnesspetfood.com.sg.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -17,10 +17,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>388</xmin>
-			<ymin>151</ymin>
-			<xmax>889</xmax>
-			<ymax>650</ymax>
+			<xmin>407</xmin>
+			<ymin>129</ymin>
+			<xmax>874</xmax>
+			<ymax>366</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -29,9 +29,33 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>887</xmin>
-			<ymin>53</ymin>
-			<xmax>1016</xmax>
+			<xmin>408</xmin>
+			<ymin>637</ymin>
+			<xmax>874</xmax>
+			<ymax>696</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>logo</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>68</xmin>
+			<ymin>13</ymin>
+			<xmax>253</xmax>
+			<ymax>122</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>button</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>860</xmin>
+			<ymin>44</ymin>
+			<xmax>1097</xmax>
 			<ymax>97</ymax>
 		</bndbox>
 	</object>
@@ -41,58 +65,22 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>1054</xmin>
-			<ymin>56</ymin>
-			<xmax>1166</xmax>
+			<xmin>1120</xmin>
+			<ymin>43</ymin>
+			<xmax>1174</xmax>
 			<ymax>96</ymax>
 		</bndbox>
 	</object>
 	<object>
-		<name>image</name>
-		<pose>Unspecified</pose>
-		<truncated>1</truncated>
-		<difficult>0</difficult>
-		<bndbox>
-			<xmin>911</xmin>
-			<ymin>152</ymin>
-			<xmax>1280</xmax>
-			<ymax>649</ymax>
-		</bndbox>
-	</object>
-	<object>
-		<name>image</name>
+		<name>button</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>2</xmin>
-			<ymin>146</ymin>
-			<xmax>371</xmax>
-			<ymax>657</ymax>
-		</bndbox>
-	</object>
-	<object>
-		<name>navbar</name>
-		<pose>Unspecified</pose>
-		<truncated>0</truncated>
-		<difficult>0</difficult>
-		<bndbox>
-			<xmin>245</xmin>
-			<ymin>57</ymin>
-			<xmax>1173</xmax>
-			<ymax>103</ymax>
-		</bndbox>
-	</object>
-	<object>
-		<name>logo</name>
-		<pose>Unspecified</pose>
-		<truncated>0</truncated>
-		<difficult>0</difficult>
-		<bndbox>
-			<xmin>115</xmin>
-			<ymin>33</ymin>
-			<xmax>210</xmax>
-			<ymax>120</ymax>
+			<xmin>1179</xmin>
+			<ymin>44</ymin>
+			<xmax>1235</xmax>
+			<ymax>96</ymax>
 		</bndbox>
 	</object>
 </annotation>
