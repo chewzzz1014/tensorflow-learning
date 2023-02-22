@@ -17,6 +17,15 @@ training_demo/
 └─ README.md
 ```
 
+## Overview
+Training with num_steps: 500
+
+![image](https://user-images.githubusercontent.com/92832451/220566068-f03dd1db-f135-4ad5-bb56-33872764ac7c.png)
+
+![image](https://user-images.githubusercontent.com/92832451/220566156-2ef3a669-361f-48f0-a243-525214d75a17.png)
+
+
+
 ## References
 1. https://colab.research.google.com/github/mlnuggets/maskrcnn/blob/main/Object_detection_with_TensorFlow_2_Object_detection_API.ipynb
 
