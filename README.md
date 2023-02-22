@@ -17,7 +17,7 @@ training_demo/
 └─ README.md
 ```
 
-## Overview
+## Train Result
 Training with num_steps: 500
 
 ![image](https://user-images.githubusercontent.com/92832451/220566068-f03dd1db-f135-4ad5-bb56-33872764ac7c.png)
