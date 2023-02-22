@@ -16,18 +16,32 @@ optional arguments:
                         Path of output .csv file. If none provided, then no file will be written.
 """
 
+'''
+To run:
+
+# Create train data:
+python generate_tfrecord.py -x [PATH_TO_IMAGES_FOLDER]/train -l [PATH_TO_ANNOTATIONS_FOLDER]/label_map.pbtxt -o [PATH_TO_ANNOTATIONS_FOLDER]/train.record
+
+# Create test data:
+python generate_tfrecord.py -x [PATH_TO_IMAGES_FOLDER]/test -l [PATH_TO_ANNOTATIONS_FOLDER]/label_map.pbtxt -o [PATH_TO_ANNOTATIONS_FOLDER]/test.record
+
+# python generate_tfrecord.py -x C:/Users/USER/tensorflow-learning/Tensorflow/workspace/training_demo/images/train -l C:/Users/USER/tensorflow-learning/Tensorflow/workspace/training_demo/annotations/label_map.pbtxt -o C:/Users/USER/tensorflow-learning/Tensorflow/workspace/training_demo/annotations/train.record
+
+# python generate_tfrecord.py -x C:/Users/USER/tensorflow-learning/Tensorflow/workspace/training_demo/images/test -l C:/Users/USER/tensorflow-learning/Tensorflow/workspace/training_demo/annotations/label_map.pbtxt -o C:/Users/USER/tensorflow-learning/Tensorflow/workspace/training_demo/annotations/test.record
+'''
+
+
+from collections import namedtuple
+from object_detection.utils import dataset_util, label_map_util
+from PIL import Image
+import tensorflow.compat.v1 as tf
 import os
 import glob
 import pandas as pd
 import io
 import xml.etree.ElementTree as ET
 import argparse
-
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'    # Suppress TensorFlow logging (1)
-import tensorflow.compat.v1 as tf
-from PIL import Image
-from object_detection.utils import dataset_util, label_map_util
-from collections import namedtuple
 
 # Initiate argument parser
 parser = argparse.ArgumentParser(
@@ -59,7 +73,7 @@ if args.image_dir is None:
     args.image_dir = args.xml_dir
 
 label_map = label_map_util.load_labelmap(args.labels_path)
-label_map_dict = label_map_util.get_label_map_dict(label_map)
+label_map_dict = label_map_util.get_label_map_dict(args.labels_path)
 
 
 def xml_to_csv(path):
