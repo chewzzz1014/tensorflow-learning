@@ -10,7 +10,7 @@ warnings.filterwarnings('ignore')
 
 IMAGE_SIZE = (12, 8)  # Output display size as you want
 # path to our trained model dir
-PATH_TO_SAVED_MODEL = "/mydrive/customTF2/data/inference_graph/saved_model"
+PATH_TO_SAVED_MODEL = "C:/Users/USER/tensorflow-learning/Tensorflow/workspace/training_demo/exported-models/my_model/saved_model"
 print('Loading model...', end='')
 
 # Load saved model and build the detection function
