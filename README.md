@@ -1,3 +1,6 @@
+## Overview
+Using Tensorflow Object Detection API with 10 train images, 4 test images and 4 detection classes.
+
 ## Project Structure
 ```
 training_demo/
