@@ -43,14 +43,14 @@
 2. Create Label Map
    - Label Map will contain all classes name
    - Download the `partition_dataset.py` script from [here](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/training.html) into `scripts/preprocessing'
-   - cd to `scripts/preprocessing' and run the following command: 
+   - cd to `scripts/preprocessing` and run the following command: 
    
      ```
         # Create train data:
-python generate_tfrecord.py -x [PATH_TO_IMAGES_FOLDER]/train -l [PATH_TO_ANNOTATIONS_FOLDER]/label_map.pbtxt -o [PATH_TO_ANNOTATIONS_FOLDER]/train.record
+         python generate_tfrecord.py -x [PATH_TO_IMAGES_FOLDER]/train -l [PATH_TO_ANNOTATIONS_FOLDER]/label_map.pbtxt -o [PATH_TO_ANNOTATIONS_FOLDER]/train.record
         
         # Create test data:
-      python generate_tfrecord.py -x [PATH_TO_IMAGES_FOLDER]/test -l [PATH_TO_ANNOTATIONS_FOLDER]/label_map.pbtxt -o [PATH_TO_ANNOTATIONS_FOLDER]/test.record
+        python generate_tfrecord.py -x [PATH_TO_IMAGES_FOLDER]/test -l [PATH_TO_ANNOTATIONS_FOLDER]/label_map.pbtxt -o [PATH_TO_ANNOTATIONS_FOLDER]/test.record
 
         # For example
         # python generate_tfrecord.py -x C:/Users/sglvladi/Documents/Tensorflow/workspace/training_demo/images/train -l C:/Users/sglvladi/Documents/Tensorflow/workspace/training_demo/annotations/label_map.pbtxt -o C:/Users/sglvladi/Documents/Tensorflow/workspace/training_demo/annotations/train.record
@@ -73,7 +73,7 @@ python generate_tfrecord.py -x [PATH_TO_IMAGES_FOLDER]/train -l [PATH_TO_ANNOTAT
       ```
       
  4. Configure Training Pipeline
-    - Create a new directory, `my_[model_name` under `training_demo/models`
+    - Create a new directory, `my_[model_name]` under `training_demo/models`
     - Copy `pipeline.config` from `pre-trained-models/[model_name]` into  `training_demo/models/my_[model_name]`
     
       ```
