@@ -32,6 +32,6 @@
    
 3. HTTP Rest
    - Client can send `POST request` to the server's port 9000 (or any other value specified in step 2) 
-   - Refer (test_deploy_http.py)[] for the implementation!
+   - Refer [test_deploy_http.py](https://github.com/chewzzz1014/tensorflow-learning/blob/master/guide/test_deploy_http.py) for the implementation!
 ## References
 1. https://www.analyticsvidhya.com/blog/2020/04/build-your-own-object-detection-model-using-tensorflow-api/
