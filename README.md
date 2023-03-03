@@ -1,5 +1,5 @@
 ## Overview
-Using Tensorflow Object Detection API with 10 train images, 4 test images and 4 detection classes.
+Using Tensorflow Object Detection API with 10 train images, 4 test images and 4 detection classes. Trained on Ubuntu server.
 
 ## Project Structure
 ```
